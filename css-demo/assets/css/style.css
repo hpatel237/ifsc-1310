@@ -1,3 +1,140 @@
+/* 
+Primary Color:#BF9B8E
+*/
+
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*  --------------- Utility Classes -----------------  */
+.container{
+    width:80vw;
+    max-width:960px;
+    margin:40px auto;
+}
+/*  --------------- Responsive Images -----------------  */
+img{
+    max-width:100%;
+}
+/*  --------------- Global Styles -----------------  */
+
 body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
     background-color:blanchedalmond;
+}
+header.primary{
+    background-color: cadetblue;
+    text-align: center;
+    color:#ffffff;
+    padding:40px;
+    /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+   /* T,R,B,L */
+  padding: 20px 40px 20px 40px;
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+  text-shadow:1px 1px #000000;
+}
+header.primary h1{
+    font-size:2.4rem;
+    margin: 20px 0 10px;
+}  
+header.primary h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+header.primary h2{
+    font-size:1.4rem;
+}
+header.primary nav{
+    max-width:960px;
+    margin: 20px auto;
+}
+header.primary nav ul {
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+header.primary nav ul li{
+    list-style-type:none;
+}
+header.primary nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color:rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius:20px;
+  border: 1px solid rgba(0,0,0,.4);
+  transition:.5s;
+}
+header.primary nav ul li a:hover,
+header.primary nav ul li a:active{
+    background-color:rgba(0,0,0,.8);
+}
+#intro{
+}
+#intro h2{
+    color:#000000;
+    border-bottom:1px dotted #c0c0c0;
+}
+#content{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:20px;
+}
+#content article.post {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+
+}
+article.post figure {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------Media Queries-------------------*/
+@media screen and (max-width:600px){
+
+header.primary nav ul {
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;
+    }
+header.primary nav a {
+    display: block;
+    }
+header.primary nav li {
+    margin-bottom: 10px;
+    }
+        
+      
 }
