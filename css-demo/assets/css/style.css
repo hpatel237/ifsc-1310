@@ -53,6 +53,8 @@ html {
     width:100%;
     border:1px solid #c0c0c0;
     border-collapse: collapse;
+    margin:20px 0;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
   }
   table caption{
     font-weight: bold;
@@ -81,6 +83,29 @@ html {
     text-align: left;
   }
 
+  /*  --------------- Lists -----------------  */
+  
+  ol{
+    list-style-type:lower-roman;
+  }
+
+  ul ul{
+    list-style-type: lower-alpha;
+    color:red;
+  }
+
+  dl{}
+  dt{
+    font-weight: bold;
+  }
+  dd{
+    margin:0;
+  }
+
+  dd+dt{/*adjacent selection combinator:selects the term that is followed by definition*/
+    margin-top: 20px;
+    color:red;
+  }
 
   /*  --------------- Global Styles -----------------  */
   
