@@ -90,14 +90,12 @@ html {
   
   header.primary h1 a {
     color: #ffffff;
-    background-image: url("https://assets.codepen.io/img/Dragon-Logo.png");
-    display: block;
+    font-family:"Yatra One";
     width: 450px;
     height: 70px;
     margin: 0 auto;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    text-shadow:10px 2px #337AA6;
+
   }
   
   header.primary h2 {
@@ -148,7 +146,13 @@ html {
   section#content {
     padding: 4em 0;
   }
-  
+  section#content h2{
+    font-family: "Merriweather";
+    font-size: 1.2em;
+    color: #337AA6;
+    border-bottom: 1px solid #c0c0c0;
+  }
+
   section#content h3{
     font-family: "Merriweather";
     font-size: 1.2em;
@@ -168,7 +172,7 @@ html {
     margin:10px;
     font-family: "Merriweather";
     font-size: 2em;
-    color: #33536b;
+    color:#337AA6;
   }
   
   section#content th {
@@ -183,12 +187,10 @@ html {
     padding:5px;
   }
   
-  section#content tr:nth-child(even){
-    background:#DCDCDC;
-  }
+ 
   
   section#content tr:hover{
-    background:#8EA6B8;
+    background:#92aec3;
   }
   
   /* ------------- Articles --------------- */
@@ -236,7 +238,7 @@ html {
   }
   
   #articles article.post:hover {
-    box-shadow: 0 8px 16px rgb(201, 50, 50);
+    box-shadow: 0 10px 16px rgb(219, 13, 13);
   }
   
   #articles article time,
@@ -275,7 +277,36 @@ html {
   #hero {
     padding: 4em 0;
   }
-  
+  /* ------------- Carousel Pic --------------- */
+  div#id img{
+    max-width:100%;
+  }
+  .pic{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+  }
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color:#337AA6;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:#337AA6;
+}
+
   /* ------------- Aside --------------- */
   
   /* Attribute Selector */

@@ -1,0 +1,71 @@
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+   /* ----- Global Styles ---- */
+  
+   body {
+    line-height: 1.5;
+    color:#fff;
+
+    font-family: "Yatra One", sans-serif;
+    margin: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/05/66/57/54/240_F_566575461_DlQFVbsqcs9R9IBtLTmvL4dhME0i7ngs.jpg");
+    background-color: rgb(151, 151, 200);
+  }
+  #container{
+    width: 70vw;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(0,0,0,.5);
+    border: double 3px #c0c0c0;
+    padding: 40px;
+  }
+  h1 {
+    font-size: 3.2rem;
+    color:#fff;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+  }
+  nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: auto;
+    color:#fff;
+    font-size: 1.3rem;
+  }
+  
+  nav li {
+    list-style-type: none;
+    padding: 100;
+    width: 50%;
+    
+  }
+  
+  nav a:link,
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: rgba(15, 14, 14, 0.689);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: block;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    background-color: rgba(51, 83, 107, 0.8);
+  }
