@@ -36,6 +36,10 @@ html {
     position: relative;
     text-align: center;
   }
+  h2 {
+    position:relative;
+    text-align: center;
+  }
   nav ul {
     position: relative;
     display: flex;
@@ -57,7 +61,7 @@ html {
   nav a:visited {
     color: white;
     text-decoration: none;
-    background-color: #000000;
+    background-color: #e52323;
     background-color: rgba(15, 14, 14, 0.689);
     padding: 8px 16px;
     border-radius: 10px;
@@ -68,4 +72,8 @@ html {
   nav a:hover,
   nav a:active {
     background-color: rgba(51, 83, 107, 0.8);
+  }
+
+  p a{
+    color:#ca201b;
   }
