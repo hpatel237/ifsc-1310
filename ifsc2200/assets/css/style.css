@@ -253,3 +253,11 @@ html {
   p a{
     color:#ca201b;
   }
+
+  q {
+    font-family: "Yatra One", sans-serif;
+    font-size: 3.2rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 16px;
+  }
